@@ -20,15 +20,9 @@
         android:id="@+id/albumNameTV"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/albumIV"
-        android:layout_toEndOf="@+id/albumIV" />
+        android:layout_toEndOf="@+id/albumIV"
+        android:layout_margin="5dp"
+        android:textColor="#ffffffff"
+        android:textSize="20sp" />
 
-    <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
-        <!--android:text="Artist Name"-->
-        <!--android:id="@+id/artistNameTV"-->
-        <!--android:layout_below="@+id/albumNameTV"-->
-        <!--android:layout_toRightOf="@+id/albumIV"-->
-        <!--android:layout_toEndOf="@+id/albumIV" />-->
 </RelativeLayout>

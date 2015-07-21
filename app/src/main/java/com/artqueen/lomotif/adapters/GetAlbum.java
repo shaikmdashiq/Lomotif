@@ -5,9 +5,6 @@ import android.content.SharedPreferences;
 import android.graphics.BitmapFactory;
 import android.preference.PreferenceManager;
 import android.util.Log;
-
-import com.artqueen.lomotif.utilities.JsonParser;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -47,7 +44,9 @@ public class GetAlbum {
             for(int i = 0 ; i < arrayJsonObject.length() ; i++){
                 String albumName = arrayJsonObject.getJSONObject(i).getJSONObject("title").getString("label");
 
-                String UrlImage = arrayJsonObject.getJSONObject(i).getJSONArray("im:image").getJSONObject(0).getString("label");
+                String UrlImage = arrayJsonObject.getJSONObject(i).getJSONArray("im:image").getJSONObject(2).getString("label");
+
+                Log.e("Url = ",""+UrlImage);
 
                 AlbumDB album = new AlbumDB();
                 album.setAlbumName(albumName);

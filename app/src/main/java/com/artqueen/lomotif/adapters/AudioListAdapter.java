@@ -25,7 +25,7 @@ public class AudioListAdapter extends ArrayAdapter<AlbumDB> {
 
     private List<AlbumDB> items;
     private Context context;
-    TextView albumNameTV,artistNameTV;
+    TextView albumNameTV;
     ImageView albumIV;
 
     public AudioListAdapter(Context context, int resource, List<AlbumDB> items) {
@@ -41,11 +41,13 @@ public class AudioListAdapter extends ArrayAdapter<AlbumDB> {
         View v = inflater.inflate(R.layout.listview_item, null);
         AlbumDB p = items.get(position);
 
-        if (p != null) {
-             albumNameTV = (TextView) v.findViewById(R.id.albumNameTV);
-             //artistNameTV = (TextView) v.findViewById(R.id.artistNameTV);
-             albumIV = (ImageView) v.findViewById(R.id.albumIV);
+        Typeface typeFace = Typeface.createFromAsset(context.getAssets(), "fonts/champagne.ttf");
 
+        if (p != null) {
+            albumNameTV = (TextView) v.findViewById(R.id.albumNameTV);
+            albumIV = (ImageView) v.findViewById(R.id.albumIV);
+
+            albumNameTV.setTypeface(typeFace);
             albumNameTV.setText(p.getAlbumName());
             albumIV.setImageBitmap(p.getAlbumPic());
 
