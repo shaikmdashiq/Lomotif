@@ -43,8 +43,11 @@ public class AudioListAdapter extends ArrayAdapter<AlbumDB> {
 
         if (p != null) {
              albumNameTV = (TextView) v.findViewById(R.id.albumNameTV);
-             artistNameTV = (TextView) v.findViewById(R.id.artistNameTV);
-            albumIV = (ImageView) v.findViewById(R.id.albumIV);
+             //artistNameTV = (TextView) v.findViewById(R.id.artistNameTV);
+             albumIV = (ImageView) v.findViewById(R.id.albumIV);
+
+            albumNameTV.setText(p.getAlbumName());
+            albumIV.setImageBitmap(p.getAlbumPic());
 
         }
         return v;
