@@ -21,7 +21,6 @@ import java.util.List;
 public class MainActivity extends Activity {
 
     ListView audioLV;
-    AudioListAdapter audioAdapter;
     Context mContext;
 
     @Override
@@ -46,12 +45,5 @@ public class MainActivity extends Activity {
 
             }
         }.execute();
-
-
-
     }
-
-
-
-
 }

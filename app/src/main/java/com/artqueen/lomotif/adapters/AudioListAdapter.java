@@ -11,13 +11,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.artqueen.lomotif.R;
-
-import java.util.ArrayList;
+import com.squareup.picasso.Picasso;
 import java.util.List;
 
 
@@ -49,7 +47,12 @@ public class AudioListAdapter extends ArrayAdapter<AlbumDB> {
 
             albumNameTV.setTypeface(typeFace);
             albumNameTV.setText(p.getAlbumName());
-            albumIV.setImageBitmap(p.getAlbumPic());
+
+            Picasso.with(context)
+                    .load(p.getImageUrl())
+                    .placeholder(R.drawable.placeholder)
+                    .fit()
+                    .into(albumIV);
 
         }
         return v;

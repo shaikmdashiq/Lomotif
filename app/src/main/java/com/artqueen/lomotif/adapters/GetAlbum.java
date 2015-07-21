@@ -1,9 +1,6 @@
 package com.artqueen.lomotif.adapters;
 
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.graphics.BitmapFactory;
-import android.preference.PreferenceManager;
 import android.util.Log;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -44,14 +41,11 @@ public class GetAlbum {
             for(int i = 0 ; i < arrayJsonObject.length() ; i++){
                 String albumName = arrayJsonObject.getJSONObject(i).getJSONObject("title").getString("label");
 
-                String UrlImage = arrayJsonObject.getJSONObject(i).getJSONArray("im:image").getJSONObject(2).getString("label");
-
-                Log.e("Url = ",""+UrlImage);
+                String imageURL = arrayJsonObject.getJSONObject(i).getJSONArray("im:image").getJSONObject(2).getString("label");
 
                 AlbumDB album = new AlbumDB();
                 album.setAlbumName(albumName);
-                URL imageUrl = new URL(UrlImage);
-                album.setAlbumPic(BitmapFactory.decodeStream(imageUrl.openConnection().getInputStream()));
+                album.setImageUrl(imageURL);
                 list.add(album);
 
             }

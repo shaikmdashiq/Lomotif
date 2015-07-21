@@ -1,7 +1,5 @@
 package com.artqueen.lomotif.adapters;
 
-import android.content.ContentValues;
-import android.content.Context;
 import android.graphics.Bitmap;
 
 /**
@@ -10,14 +8,12 @@ import android.graphics.Bitmap;
 public class AlbumDB {
 
     private String albumName;
-    private String artistName;
-    private Bitmap albumPic;
+    private String imageUrl;
 
 
-    public AlbumDB(String albumName, String artistName, Bitmap albumPic) {
+    public AlbumDB(String albumName, String imageUrl, Bitmap albumPic) {
         this.albumName = albumName;
-        this.artistName = artistName;
-        this.albumPic = albumPic;
+        this.imageUrl = imageUrl;
     }
 
     public AlbumDB() {
@@ -32,21 +28,12 @@ public class AlbumDB {
         this.albumName = albumName;
     }
 
-    public String getArtistName() {
-        return artistName;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public void setArtistName(String artistName) {
-        this.artistName = artistName;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
-
-    public Bitmap getAlbumPic() {
-        return albumPic;
-    }
-
-    public void setAlbumPic(Bitmap albumPic) {
-        this.albumPic = albumPic;
-    }
-
 
 }

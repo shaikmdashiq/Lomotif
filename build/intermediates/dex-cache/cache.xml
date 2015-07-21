@@ -2,13 +2,6 @@
 <items version="2" >
 
     <item
-        jar="/Users/shaikmdashiq/Desktop/Lomotif/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/Users/shaikmdashiq/Desktop/Lomotif/app/build/intermediates/pre-dexed/debug/classes-ea81a3485af7d9193b6b3c64af26a6e14b348d3a.jar" />
-    </item>
-    <item
         jar="/Users/shaikmdashiq/Desktop/Lomotif/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -21,6 +14,20 @@
         revision="22.0.1"
         sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
         <dex dex="/Users/shaikmdashiq/Desktop/Lomotif/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-87579a58bfe29930d76ed18789e3da6da78261c2.jar" />
+    </item>
+    <item
+        jar="/Users/shaikmdashiq/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/shaikmdashiq/Desktop/Lomotif/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-34cb046996f085b3b8ac9c749a242d944922ee90.jar" />
+    </item>
+    <item
+        jar="/Users/shaikmdashiq/Desktop/Lomotif/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/shaikmdashiq/Desktop/Lomotif/app/build/intermediates/pre-dexed/debug/classes-ea81a3485af7d9193b6b3c64af26a6e14b348d3a.jar" />
     </item>
     <item
         jar="/Users/shaikmdashiq/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
